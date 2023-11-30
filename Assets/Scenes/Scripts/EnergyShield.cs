@@ -15,7 +15,7 @@ public class EnergyShield : MonoBehaviour
     private void OnCollisionEnter(Collision coll)
     {
         GameObject Collided = coll.gameObject;
-        if (Collided.tag == "DragonEgg")
+        if (Collided.tag == "Droppable")
         {
             Destroy(Collided);
         }
